@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/* Header */
+.header-navbar {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom-style: solid;
+  border-bottom-width: 0.3rem;
+}
+.header-navbar a {
+  margin: 5px 5px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: rgba(0, 0, 0, 1);
+  box-shadow: 0.3em 0.3em 0 0 rgba(0, 0, 0, 1),
+              inset 0.3em 0.3em 0 0;
+  transition: all .2s;
+}
+.header-navbar a:hover,
+.header-navbar a:focus {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1),
+              inset 6em 3.5em 0 0 rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Main */
+.main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+}
+.container > h1 {
+  border-bottom:  0.1rem solid rgba(0, 0, 0, 1);
+}
+.form {
+  padding: 1rem 0;
+}
+.form div {
+  margin: 1rem 1rem;
+}
+.form input,
+.form select {
+  width: 48%;
+  line-height: 1.5rem;
+  border: 1px solid #C2C2C2;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  border-radius: 3px;
+  outline: none;
+}
+.form input[type="checkbox"] {
+  width: initial;
+}
+.form input:focus,
+.form select:focus {
+  border: 1px solid #0C0;
+}
+.form button {
+  background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form button:hover {
+  background: #4691A4;
+	box-shadow:none;
+}
+
+.result-row {
+  width: 48%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; 
+  align-items: center;
+  justify-items: center;
+}
+.result-row button {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.result-row p {
+  text-align: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+/* Footer */
+.footer{
+  padding: 20px;
+  border-top-style: solid;
+  border-top-width: 0.3rem;
+}
+.footer-about {
+  float: left;
+  margin-left: 20px;
+}
+.footer-social {
+  float: right;
+  margin-right: 20px;
+}
+.footer-social .icon img {
+  width: 32px;
+  height: auto;
+}
+/* 404 */
+.page-404 {
+  text-align: center;
+  height: 80vh;
+}

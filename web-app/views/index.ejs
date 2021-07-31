@@ -1,0 +1,298 @@
+<%- include("header"); -%>
+
+<div class="main">
+  <div class="container">
+    <h1>Enter the car's characteristics and estimate its price</h1>
+    <form class="form" id="features-form">
+      <!-- brand -->
+      <div>
+        <select id="brand">
+          <option value="">--Please choose a brand--</option>
+          <option value="audi">audi</option>
+          <option value="baic">baic</option>
+          <option value="bmw">bmw</option>
+          <option value="brilliance">brilliance</option>
+          <option value="bugatti">bugatti</option>
+          <option value="byd">byd</option>
+          <option value="chana">chana</option>
+          <option value="changan">changan</option>
+          <option value="chery">chery</option>
+          <option value="chevrolet">chevrolet</option>
+          <option value="citroen">citroen</option>
+          <option value="dacia">dacia</option>
+          <option value="daewoo">daewoo</option>
+          <option value="daihatsu">daihatsu</option>
+          <option value="dfm">dfm</option>
+          <option value="dfsk">dfsk</option>
+          <option value="ds">ds</option>
+          <option value="emgrand">emgrand</option>
+          <option value="faw">faw</option>
+          <option value="fiat">fiat</option>
+          <option value="ford">ford</option>
+          <option value="foton">foton</option>
+          <option value="geely">geely</option>
+          <option value="gonow">gonow</option>
+          <option value="great wall">great wall</option>
+          <option value="hafei motors">hafei motors</option>
+          <option value="haima">haima</option>
+          <option value="honda">honda</option>
+          <option value="hyundai">hyundai</option>
+          <option value="isuzu">isuzu</option>
+          <option value="jac">jac</option>
+          <option value="jaguar">jaguar</option>
+          <option value="jeep">jeep</option>
+          <option value="jmc">jmc</option>
+          <option value="kia">kia</option>
+          <option value="lada">lada</option>
+          <option value="land rover">land rover</option>
+          <option value="lifan">lifan</option>
+          <option value="mahindra">mahindra</option>
+          <option value="mazda">mazda</option>
+          <option value="mercedes benz">mercedes benz</option>
+          <option value="mg">mg</option>
+          <option value="mini">mini</option>
+          <option value="mitsubishi">mitsubishi</option>
+          <option value="nissan">nissan</option>
+          <option value="opel">opel</option>
+          <option value="peugeot">peugeot</option>
+          <option value="porsche">porsche</option>
+          <option value="renault">renault</option>
+          <option value="rover">rover</option>
+          <option value="saipa">saipa</option>
+          <option value="seat">seat</option>
+          <option value="skoda">skoda</option>
+          <option value="ssangyong">ssangyong</option>
+          <option value="subaru">subaru</option>
+          <option value="suzuki">suzuki</option>
+          <option value="tata">tata</option>
+          <option value="toyota">toyota</option>
+          <option value="volkswagen">volkswagen</option>
+          <option value="zotye">zotye</option>
+        </select>
+      </div>
+  
+      <!-- model -->
+      <div>
+        <input type="text" placeholder="model" id="model">
+      </div>
+  
+      <!-- year -->
+      <div>
+        <input type="number" placeholder="year" id="year">
+      </div>
+  
+      <!-- range -->
+      <div>
+        <input type="number" placeholder="range" id="range">
+      </div>
+  
+      <!-- category -->
+      <div>
+        <select id="category">
+          <option value="">--Please choose a category--</option>
+          <option value="berline">berline</option>
+          <option value="break - familiale">break - familiale</option>
+          <option value="cabriolet - coupé">cabriolet - coupé</option>
+          <option value="camionnette">camionnette</option>
+          <option value="citadine">citadine</option>
+          <option value="commerciale">commerciale</option>
+          <option value="fourgonnette">fourgonnette</option>
+          <option value="grande berline">grande berline</option>
+          <option value="mini citadine">mini citadine</option>
+          <option value="moyenne berline">moyenne berline</option>
+          <option value="pickup">pickup</option>
+          <option value="tout terrain - suv">tout terrain - suv</option>
+        </select>
+      </div>
+  
+      <!-- energy -->
+      <div>
+        <select id="energy">
+          <option value="">--Please choose an energy--</option>
+          <option value="diesel">diesel</option>
+          <option value="essence">essence</option>
+          <option value="gpl">gpl</option>
+        </select>
+      </div>
+  
+      <!-- volume -->
+      <div>
+        <input type="number" placeholder="engine volume" id="volume">
+      </div>
+  
+      <!-- horses -->
+      <div>
+        <input type="number" placeholder="engine horse power" id="horses">
+      </div>
+  
+      <!-- transmission -->
+      <div>
+        <select id="transmission">
+          <option value="">--Please choose a transmission--</option>
+          <option value="automatique">automatique</option>
+          <option value="manuelle">manuelle</option>
+          <option value="semi automatique">semi automatique</option>
+        </select>
+      </div>
+  
+      <!-- color -->
+      <div>
+        <select id="color">
+          <option value="">--Please choose a color-</option>
+          <option value="aubergine">aubergine</option>
+          <option value="beige">beige</option>
+          <option value="blanc">blanc</option>
+          <option value="bleu">bleu</option>
+          <option value="grenat">grenat</option>
+          <option value="gris">gris</option>
+          <option value="jaune">jaune</option>
+          <option value="maron">maron</option>
+          <option value="marron">marron</option>
+          <option value="mauve">mauve</option>
+          <option value="miel">miel</option>
+          <option value="noir">noir</option>
+          <option value="orange">orange</option>
+          <option value="rose">rose</option>
+          <option value="rouge">rouge</option>
+          <option value="vert">vert</option>
+          <option value="violet">violet</option>
+        </select>
+      </div>
+  
+      <!-- options -->
+      <div id="options">
+        <label>Options</label>
+        <br>
+        <input type="checkbox" name="options" value="phares antibrouillard">
+        <label for="phares antibrouillard">phares antibrouillard</label>
+        <br>
+        <input type="checkbox" name="options" value="toit ouvrant">
+        <label for="toit ouvrant">toit ouvrant</label>
+        <br>
+        <input type="checkbox" name="options" value="phares xénon">
+        <label for="phares xénon">phares xénon</label>
+        <br>
+        <input type="checkbox" name="options" value="climatisation">
+        <label for="climatisation">climatisation</label>
+        <br>
+        <input type="checkbox" name="options" value="retroviseurs électriques">
+        <label for="retroviseurs électriques">retroviseurs électriques</label>
+        <br>
+        <input type="checkbox" name="options" value="abs">
+        <label for="abs">abs</label>
+        <br>
+        <input type="checkbox" name="options" value="alarme">
+        <label for="alarme">alarme</label>
+        <br>
+        <input type="checkbox" name="options" value="vitres éléctriques">
+        <label for="vitres éléctriques">vitres éléctriques</label>
+        <br>
+        <input type="checkbox" name="options" value="direction assisstée">
+        <label for="direction assisstée">direction assisstée</label>
+        <br>
+        <input type="checkbox" name="options" value="esp">
+        <label for="esp">esp</label>
+        <br>
+        <input type="checkbox" name="options" value="feux du jour">
+        <label for="feux du jour">feux du jour</label>
+        <br>
+        <input type="checkbox" name="options" value="jantes alliage">
+        <label for="jantes alliage">jantes alliage</label>
+        <br>
+        <input type="checkbox" name="options" value="radar de recul">
+        <label for="radar de recul">radar de recul</label>
+        <br>
+      </div>
+  
+      <!-- papers -->
+      <div>
+        <select id="papers">
+          <option value="">--Please choose legal documents type--</option>
+          <option value="carte grise (safia)">carte grise (safia)</option>
+          <option value="carte jaune (safia)">carte jaune (safia)</option>
+          <option value="licence moudjahid / délai">licence moudjahid / délai</option>
+        </select>
+      </div>
+  
+      <!-- wilaya -->
+      <div>
+        <select id="wilaya">
+          <option value="">--Please choose a wilaya--</option>
+          <option value="adrar">adrar</option>
+          <option value="ain defla">ain defla</option>
+          <option value="ain temouchent">ain temouchent</option>
+          <option value="alger">alger</option>
+          <option value="annaba">annaba</option>
+          <option value="batna">batna</option>
+          <option value="bechar">bechar</option>
+          <option value="bejaia">bejaia</option>
+          <option value="biskra">biskra</option>
+          <option value="blida">blida</option>
+          <option value="bordj bou arreridj">bordj bou arreridj</option>
+          <option value="bouira">bouira</option>
+          <option value="boumerdes">boumerdes</option>
+          <option value="chlef">chlef</option>
+          <option value="constantine">constantine</option>
+          <option value="djelfa">djelfa</option>
+          <option value="el bayadh">el bayadh</option>
+          <option value="el oued">el oued</option>
+          <option value="el taref">el taref</option>
+          <option value="ghardaia">ghardaia</option>
+          <option value="guelma">guelma</option>
+          <option value="illizi">illizi</option>
+          <option value="jijel">jijel</option>
+          <option value="khenchela">khenchela</option>
+          <option value="laghouat">laghouat</option>
+          <option value="mascara">mascara</option>
+          <option value="medea">medea</option>
+          <option value="mila">mila</option>
+          <option value="mostaganem">mostaganem</option>
+          <option value="msila">msila</option>
+          <option value="naama">naama</option>
+          <option value="oran">oran</option>
+          <option value="ouargla">ouargla</option>
+          <option value="oum el bouaghi">oum el bouaghi</option>
+          <option value="relizane">relizane</option>
+          <option value="saida">saida</option>
+          <option value="setif">setif</option>
+          <option value="sidi bel abbes">sidi bel abbes</option>
+          <option value="skikda">skikda</option>
+          <option value="souk ahras">souk ahras</option>
+          <option value="tamanrasset">tamanrasset</option>
+          <option value="tebessa">tebessa</option>
+          <option value="tiaret">tiaret</option>
+          <option value="tindouf">tindouf</option>
+          <option value="tipaza">tipaza</option>
+          <option value="tissemsilt">tissemsilt</option>
+          <option value="tizi ouzou">tizi ouzou</option>
+          <option value="tlemcen">tlemcen</option>
+        </select>
+      </div>
+  
+      <!-- town -->
+      <div>
+        <input type="text" placeholder="town" id="town">
+      </div>
+  
+      <!-- offer -->
+      <div>
+        <select id="offer">
+          <option value="">--Please choose an offer--</option>
+          <option value="fixe">fixe</option>
+          <option value="négociable">négociable</option>
+          <option value="offert">offert</option>
+        </select>
+      </div>
+
+      <div class="result-row">
+        <button id="submit">Estimate price</button>
+        <p id="message"></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript" src="/assets/javascript/index.js">
+</script>
+
+<%- include("footer"); -%>
