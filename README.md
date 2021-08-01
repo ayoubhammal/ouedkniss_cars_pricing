@@ -8,7 +8,7 @@ Example of prediction and demonstration of accuracy.
 
 **Prediciton:**
 
-![Prediction](/prediciton.png)
+![Prediction](/prediction.png)
 
 **Real data on Ouekdniss:**
 
